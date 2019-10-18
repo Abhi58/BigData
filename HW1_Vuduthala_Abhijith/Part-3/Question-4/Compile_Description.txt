@@ -1,0 +1,16 @@
+Steps to compile a MapReduce based program :
+
+1) First we start the dfs from localhost using 'sbin/start-dfs.sh' command.
+
+2) Create the directory(wordcount for this program) where you want to create your
+   input and output directories. For this example, 'bin/hdfs dfs -mkdir WordCount' 
+   and 'bin/hdfs dfs -mkdir WordCount/input' commands.
+
+3) Put the required input files to run the program in the input directory. For this
+   example, use command 'bin/hadoop dfs -put /home/abhi/Desktop/BigData/HW1_Vuduthala_Abhijith/Part-1/dataset.txt /user/abhi/WordCount/input'.
+
+4) Compile the Java program file(WordCount1.java in the example) using the command 'bin/hadoop com.sun.tools.javac.Main -d /home/abhi/Desktop/BigData/HW1_Vuduthala_Abhijith/Part-3/Question-4/WordCount1/ /home/abhi/Desktop/BigData/HW1_Vuduthala_Abhijith/Part-3/Question-4/WordCount1.java'
+
+5) Create the jar file of the compiled directory of the program using command 'jar -cvf WordCount1.jar -C WordCount1/ .'
+
+6) Run the application using the following command, bin/hadoop jar /home/abhi/Desktop/BigData/HW1_Vuduthala_Abhijith/Part-3/Question-4/WordCount1.jar WordCount1 /user/abhi/WordCount/input /user/abhi/WordCount/output

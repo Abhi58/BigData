@@ -1,0 +1,12 @@
+
+Q(4) is the mapper without combiner approach whose values are stored in values1.txt file. 
+Q(5) is the mapper with combiner approach whose values are stored in values2.txt file. 
+Q(6) is the in-mapper combining approach 1 whose values are stored in values3.txt file.
+Q(7) is the in-mapper combining approach 2 whose values are stored in values4.txt file.
+
+Based on the values recorded, the mapper without combiner has the worst results of all when compared to other three because it produced almost 7 times more reduce shuffle bytes. The other 3 approaches produce better results, because reducing the amount of bytes sent over the network to mapreduce jobs increases its efficiency. 
+
+Among the other three, mapper with combiner ranks 3rd with in-mapper combinig approach 1 ranks 2nd. The in-mapper combining approach 2 is the best way of all 4 approaches to do mapreduce job because, it has best results of all 4 having least Reduce shuffle bytes, Map output bytes, Spilled records and Combine input records.
+
+So, it is evident that using either combiner or in-mapper combining approach is useful in improving the performance of MapReduce jobs.
+

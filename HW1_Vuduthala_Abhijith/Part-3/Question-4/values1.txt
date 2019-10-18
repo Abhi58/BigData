@@ -1,0 +1,6 @@
+Reduce shuffle bytes=1456078
+Reduce output records=13638
+Spilled Records=249184
+Map output bytes=1206888
+Combine input records=0
+Combine output records=0
