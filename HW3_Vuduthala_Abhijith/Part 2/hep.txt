@@ -1,0 +1,58 @@
+Alameda,195,500,14.4
+Alpine,318,560,0
+Amador,265,550,12.1
+Butte,220,630,52.9
+Calaveras,280,530,22.6
+Colusa,195,598,23.8
+Contra Costa,192,515,12.5
+Del Norte,100,790,301.5
+El Dorado,260,580,32
+Fresno,320,425,53.9
+Glenn,180,630,35
+Humboldt,90,705,100.5
+Imperial,648,56,66.3
+Inyo,450,403,29.3
+Kern,396,256,41.2
+Kings,315,380,21.9
+Lake,155,597,39.5
+Lassen,270,710,59.2
+Los Angeles,436,168,21
+Madera,315,455,45
+Marin,175,510,20.2
+Mariposa,305,485,10.4
+Mendocino,125,602,27.5
+Merced,285,470,16.6
+Modoc,265,765,59.8
+Mono,380,515,31.6
+Monterey,212,415,26.6
+Napa,185,545,23.8
+Nevada,255,610,13.8
+Orange,468,112,17.3
+Placer,270,595,50.8
+Plumas,272,660,34.6
+Riverside,600,120,46.5
+Sacramento,235,548,43.1
+San Benito,220,430,25
+San Bernadino,584,216,33.7
+San Diego,544,52,22.4
+San Fransisco,185,503,78.2
+San Joaquin,236,520,30.5
+San Luis Obispo,272,260,11.8
+San Mateo,190,490,26.6
+Santa Barbara,300,200,24.4
+Santa Clara,202,475,14.8
+Santa Cruz,200,450,27.8
+Shasta,197,712,197.5
+Sierra,275,630,78.4
+Siskiyou,180,782,75.9
+Solano,192,540,23.6
+Sonoma,170,535,24.6
+Stanislaus,265,491,26.8
+Sutter,210,590,32.6
+Tehama,193,680,58.3
+Trinity,140,702,75
+Tulare,365,385,30.3
+Tuolumne,303,515,20.7
+Ventura,372,176,16.2
+Yolo,205,570,30.6
+Yuba,228,604,79.8

@@ -5,6 +5,7 @@ import sys
 from operator import add
 
 from pyspark.sql import SparkSession
+from pyspark import SparkContext
 
 from pyspark.ml.linalg import Vectors
 from pyspark.ml.feature import VectorAssembler
@@ -15,6 +16,8 @@ spark = SparkSession\
         .builder\
         .appName("PythonKMeans")\
         .getOrCreate()
+
+sc = SparkContext.getOrCreate()
 # Loads data.
 data = spark.read.csv("wine.data")
 
@@ -25,10 +28,9 @@ td.show()
 kmeans = KMeans().setK(3).setSeed(1)
 model = kmeans.fit(td)
 
-# Evaluate clustering by computing Within Set Sum of Squared Errors.
-
 # Shows the result.
 clusters = model.clusterCenters()
+sc.parallelize(clusters).saveAsTextFile("kMeansOutput")
 print("Cluster Centers: ")
 for cluster in clusters:
     print(cluster)
